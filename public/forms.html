@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Formulário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+        <meta name="author" content="Alexandre-Castellano">
+        <meta name="description" content="forms">
+        <title>Formulário</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="../crud.js"></script>
+    </head>
+    <body>
+        <header><h1 id="title">Insira seus dados para o formulário</h1></header>
+        <p id="description">Complete os dados de cadastro</p>
+            <form action="/enviarform" id="survey-form" method="post">
+                <fieldset>
+                <label id="name-label">Nome <input type="text" id="nome" name="nome" placeholder="Nome" required></label>
+                <label for="ra">RA <input type="text" id="ra"  name="ra" placeholder="ra" required></label>
+<!--                 <label for="dtNasc">Data de Nascimento <input  type="date" id="dtNasc" name="dtNasc" required></label>
+ -->                <!-- <label for="qtde">Quantidade <input type="range" name="qtde" id="qtde" min="0" max="100" step="1" oninput="valorqtde.value = qtde.value">
+                    <output name="valorqtde" id="valorqtde">50</output>
+                </label>
+                <label id="number-label">Adicione um número<input type="number" name="num" id="number" min="0" max="100" placeholder="42"></label>
+                <label id="email-label">E-mail <input type="email" id="email" name="email-label" placeholder="E-mail" required></label>
+                <label for="senha">Senha <input type="password" pattern=[a-z0-5]{8,} id="senha" name="senha" required></label>
+                <label for="telefone">Telefone <input type="tel" id="telefone" name="telefone" placeholder="Telefone"></label>
+                <label for="sugestao">Sugestões <textarea id="sugestao" name="sugestao" rows="3" cols="80" placeholder="Sugestões"></textarea></label>
+                </fieldset>
+                <fieldset><label for="opa"><input class="box" type="radio" name="op-type" value="opa"> Opcional A</label><label for="opb"><input class="box" type="radio" name="op-type" value="opb"> Opcional B</label></fieldset>
+                <fieldset><label for="file">Adicione Documento: <input type="file" name="cv" id="file"></label></fieldset>
+                <fieldset><label for="check"><input type="checkbox" name="1" value="1"></label><label for="check"><input type="checkbox" name="2" value="2"></label><label for="check"><input type="checkbox" name="3" value="3"></label></fieldset>
+                <fieldset>
+                    <label for="conhec">Como nos conheceu? 
+                        <select name="selection" id="dropdown">
+                            <option value="0">(Escolha uma Opção)</option>
+                            <option value="1">Opção 1</option>
+                            <option value="2">Opção 2</option>
+                        </select>
+                    </label>
+                </fieldset> -->
+                <fieldset>
+                    <input type="reset" value="Resetar">
+                    <input type="submit" value="Enviar" id="submit" onclick="inserir(document.getElementById(name), document.getElementById(id));">
+                </fieldset>
+            </form>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+body{
+    margin:0;
+    width: auto;
+    background-color: lightgrey;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+header{
+    background-color: aquamarine ;
+    width: auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+fieldset{
+    width: 80%;
+    margin: 7px auto;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 1rem;
+}
+input{
+    width: 100%;
+    padding: 1px;
+    border-radius: 1rem;
+    border-color:antiquewhite;
+    min-height: 2em;
+}
+.box{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+input[type="submit"]{
+    background-color: lightblue;
+    border-color:aliceblue;
+}
+input[type='reset']{
+    background-color: lightcoral;
+    border-color:aliceblue;
+}
